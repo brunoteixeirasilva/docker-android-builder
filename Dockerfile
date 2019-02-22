@@ -1,6 +1,6 @@
 FROM beevelop/cordova:latest
 
-LABEL MAINTAINER "Arquia Inovação <desenvolvimento@arquia.com.br>"
+LABEL MAINTAINER "Druddr Media <bruno@druddr.com>"
 
 # setting the app folder
 ENV APP_FOLDER agildash
@@ -53,8 +53,4 @@ RUN npm run build:cordova
 RUN cordova platform add android
 
 # building the app
-# RUN cordova build android --release --archs=arm --device --gradleArg=--no-daemon
 RUN cordova build android --release --device --buildConfig
-
-# "homepage": "https://agildash.arquia.com.br/",
-# "start": "node server.js", 
