@@ -3,7 +3,7 @@ FROM beevelop/cordova:latest
 LABEL MAINTAINER "Druddr Media <bruno@druddr.com>"
 
 # setting the app folder
-ENV APP_FOLDER agildash
+ENV APP_FOLDER <path/to/your/folder>
 
 # reporting position
 RUN echo "=> BEGIN: Testing dependencies"
